@@ -1,0 +1,78 @@
+:root {
+    --background-color: #000000;
+    --text-color: #000000;
+    --highlight-color: #f0c040;
+    --font-family: 'Arial', sans-serif;
+    --padding: 20px;
+    --border-radius: 8px;
+    --cronometro-color: #000000;
+}
+
+body {
+    margin: 0;
+    padding: var(--padding);
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    color: var(--text-color);
+}
+
+h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.alunos-lista {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.aluno {
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aluno-nome {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.saida {
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.cronometro {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--cronometro-color);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .aluno {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .aluno-nome, .cronometro {
+        font-size: 16px;
+    }
+
+    .saida {
+        font-size: 12px;
+    }
+}

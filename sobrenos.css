@@ -1,0 +1,175 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Tom escuro que ajuda a destacar o conteúdo */
+    color: #ffffff;
+}
+
+/* Container Principal */
+.container {
+    width: 95%;
+    margin: auto;
+    padding: 20px 0;
+    max-width: 1200px;
+    overflow-y:auto ; /* Impede o estouro do conteúdo */
+}
+
+/* Cabeçalho */
+header {
+    background: #1f1f1f;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 48px;
+    border-bottom: 2px solid #e7dcdc;
+    overflow-y: auto;
+    letter-spacing: 1px; /* Melhora o espaçamento das letras no título */
+}
+
+h1, h2, h3 {
+    color: #e7dcdc;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+h2, h3 {
+    font-size: 28px;
+}
+
+/* Seção de Títulos */
+.section-title {
+    border-bottom: 2px solid #e7dcdc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-transform: uppercase; /* Deixa o título mais destacado */
+    
+}
+
+/* Estilização da Equipe */
+.team-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+margin-top: 10px;   
+ margin-bottom: 40px;
+}
+
+.team-grid {
+  overflow-x: 40px;
+}
+.team-member {
+    text-align: center;
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Realça o efeito de hover */
+}
+
+.team-member strong {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.team-member span {
+    font-size: 18px;
+    color: #b8b8b8;
+}
+
+/* Seção Sobre Nós - Centralizada */
+.section-content {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 18px;
+    line-height: 1.8;
+    overflow-y: auto;
+    width: 100%;
+}
+
+/* Seções Alternadas Esquerda-Direita */
+.left-align, .right-align {
+    margin: 20px 0;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.right-align {
+    text-align: right;
+}
+
+/* Ajustes para diferentes tamanhos de tela */
+@media (max-width: 768px) {
+    .left-align, .right-align {
+        text-align: center;
+        margin: 20px auto;
+        padding: 15px;
+    }
+    .team-section {
+        flex-direction: column;
+    }
+}
+
+/* Listas de Valores */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 15px;
+    font-size: 18px;
+    padding-left: 25px;
+    position: relative;
+    line-height: 1.5;
+}
+
+ul li::before {
+    content: "✔";
+    color: #b8b8b8;
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* Ajuste do Texto */
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    text-align: justify; /* Melhora a leitura de blocos de texto */
+}
+
+/* Seções com borda e espaçamento */
+section {
+    padding: 20px;
+    margin-bottom: 40px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sutil sombra para dar profundidade */
+}
+
+/* Melhorando o alinhamento da aba de valores */
+div.tab {
+    margin-left: auto;
+    padding-left: 20px;
+    text-align: center; /* Centraliza o conteúdo */
+}

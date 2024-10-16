@@ -1,0 +1,87 @@
+/* Estilos para o corpo do site */
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+/* Título principal */
+h1 {
+    margin-top: 40px;
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+/* Estilos para a lista de alunos */
+.alunos-lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Estilos para cada aluno */
+.aluno {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 320px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #282828;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.aluno:hover {
+    transform: scale(1.05);
+}
+
+.aluno-nome {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #f0f0f0;
+}
+
+/* Estilos para os botões de presença */
+.presenca {
+    padding: 8px 12px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.presenca:hover {
+    transform: translateY(-2px);
+}
+
+.ausente {
+    background-color: #e74c3c;
+    color: #ffffff;
+}
+
+.presente {
+    background-color: #2ecc71;
+    color: #ffffff;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    .aluno {
+        width: 90%;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+
+    .aluno-nome {
+        font-size: 1rem;
+    }
+}
