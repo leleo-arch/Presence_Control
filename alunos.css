@@ -25,8 +25,8 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%px;
-    gap:20px;
+    width: 30%;
+    gap: 20px;
     padding: 15px;
     margin-bottom: 15px;
     background-color: #282828;
@@ -67,16 +67,42 @@ h1 {
     color: #ffffff;
 }
 
-@media (max-width: 600px) {
-    .aluno {
-        width: 90%;
-    }
-    
+/* Responsividade */
+@media (max-width: 768px) {
     h1 {
         font-size: 2rem;
     }
 
+    .aluno {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .aluno-nome {
+        font-size: 1.1rem;
+    }
+
+    .presenca {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .aluno {
+        width: 95%;
+    }
+
     .aluno-nome {
         font-size: 1rem;
+    }
+
+    .presenca {
+        font-size: 0.85rem;
     }
 }
