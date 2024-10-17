@@ -30,7 +30,7 @@ header {
 }
 
 h1, h2, h3 {
-    color: #e7dcdc;
+    color: #ffffff;
     font-weight: 300;
     margin-bottom: 10px;
 }
@@ -41,7 +41,7 @@ h2, h3 {
 
 /* Seção de Títulos */
 .section-title {
-    border-bottom: 2px solid #e7dcdc;
+    border-bottom: 2px solid #ffffff;
     padding-bottom: 10px;
     margin-bottom: 20px;
     font-size: 24px;
@@ -85,7 +85,7 @@ margin-top: 10px;
 
 .team-member span {
     font-size: 18px;
-    color: #b8b8b8;
+    color: #ffffff;
 }
 
 /* Seção Sobre Nós - Centralizada */

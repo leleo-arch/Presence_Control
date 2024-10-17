@@ -19,14 +19,18 @@ h1 {
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+    gap: 1px;
+    padding: 0 10px;
+    background-color: #1a1a1a;
 }
 
 .aluno {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    width: 30%;
-    gap: 20px;
+    gap:15px;
+    width: 40%;
+    max-width: 600px;
     padding: 15px;
     margin-bottom: 15px;
     background-color: #282828;
@@ -45,9 +49,14 @@ h1 {
     color: #f0f0f0;
 }
 
+/* Container para agrupar os botões de presença e ausência */
+.presenca-container {
+    display: flex;
+    gap: 10px; /* Espaço entre os botões */
+}
+
 .presenca {
     padding: 8px 12px;
-    margin-left: 10px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
@@ -67,42 +76,22 @@ h1 {
     color: #ffffff;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
-    }
-
-    .aluno {
-        flex-direction: column;
-        justify-content: center;
-        gap: 10px;
-        padding: 10px;
-    }
-
-    .aluno-nome {
-        font-size: 1.1rem;
-    }
-
-    .presenca {
-        font-size: 0.9rem;
-    }
-}
-
+/* Ajustes para dispositivos pequenos */
 @media (max-width: 600px) {
     h1 {
-        font-size: 1.8rem;
-    }
-
-    .aluno {
-        width: 95%;
+        font-size: 2rem;
     }
 
     .aluno-nome {
         font-size: 1rem;
     }
 
+    .aluno {
+        width: 100%;
+        padding: 10px;
+    }
+
     .presenca {
-        font-size: 0.85rem;
+        padding: 6px 10px;
     }
 }

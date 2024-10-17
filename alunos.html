@@ -9,68 +9,63 @@
 </head>
 <body>
     <h1>Lista de Alunos</h1>
+    
+    <div class="contagem">
+        <span id="total-presente">Presenças: 0</span>
+        <span id="total-ausente">Ausências: 0</span>
+    </div>
+
     <div class="alunos-lista">
         <div class="aluno">
             <span class="aluno-nome">Miguel</span>
-            <span class="presenca ausente" onclick="registrarAusencia(this)">Ausente</span>
-            <span class="presenca presente" onclick="registrarPresenca(this)">Presente</span>
-            <span class="contador">Presenças: 0 | Ausências: 0</span>
+            <span class="presenca ausente" data-status="ausente">Ausente</span>
+            <span class="presenca presente" data-status="presente">Presente</span>
         </div>
         <div class="aluno">
             <span class="aluno-nome">Davi</span>
-            <span class="presenca ausente" onclick="registrarAusencia(this)">Ausente</span>
-            <span class="presenca presente" onclick="registrarPresenca(this)">Presente</span>
-            <span class="contador">Presenças: 0 | Ausências: 0</span>
+            <span class="presenca ausente" data-status="ausente">Ausente</span>
+            <span class="presenca presente" data-status="presente">Presente</span>
         </div>
         <div class="aluno">
             <span class="aluno-nome">Eric</span>
-            <span class="presenca ausente" onclick="registrarAusencia(this)">Ausente</span>
-            <span class="presenca presente" onclick="registrarPresenca(this)">Presente</span>
-            <span class="contador">Presenças: 0 | Ausências: 0</span>
+            <span class="presenca ausente" data-status="ausente">Ausente</span>
+            <span class="presenca presente" data-status="presente">Presente</span>
         </div>
         <div class="aluno">
             <span class="aluno-nome">Vinicius</span>
-            <span class="presenca ausente" onclick="registrarAusencia(this)">Ausente</span>
-            <span class="presenca presente" onclick="registrarPresenca(this)">Presente</span>
-            <span class="contador">Presenças: 0 | Ausências: 0</span>
+            <span class="presenca ausente" data-status="ausente">Ausente</span>
+            <span class="presenca presente" data-status="presente">Presente</span>
         </div>
         <div class="aluno">
             <span class="aluno-nome">Samuel</span>
-            <span class="presenca ausente" onclick="registrarAusencia(this)">Ausente</span>
-            <span class="presenca presente" onclick="registrarPresenca(this)">Presente</span>
-            <span class="contador">Presenças: 0 | Ausências: 0</span>
+            <span class="presenca ausente" data-status="ausente">Ausente</span>
+            <span class="presenca presente" data-status="presente">Presente</span>
         </div>
         <div class="aluno">
             <span class="aluno-nome">Ayres</span>
-            <span class="presenca ausente" onclick="registrarAusencia(this)">Ausente</span>
-            <span class="presenca presente" onclick="registrarPresenca(this)">Presente</span>
-            <span class="contador">Presenças: 0 | Ausências: 0</span>
+            <span class="presenca ausente" data-status="ausente">Ausente</span>
+            <span class="presenca presente" data-status="presente">Presente</span>
         </div>
         <div class="aluno">
             <span class="aluno-nome">Enrico</span>
-            <span class="presenca ausente" onclick="registrarAusencia(this)">Ausente</span>
-            <span class="presenca presente" onclick="registrarPresenca(this)">Presente</span>
-            <span class="contador">Presenças: 0 | Ausências: 0</span>
+            <span class="presenca ausente" data-status="ausente">Ausente</span>
+            <span class="presenca presente" data-status="presente">Presente</span>
         </div>
         <div class="aluno">
             <span class="aluno-nome">Heitor</span>
-            <span class="presenca ausente" onclick="registrarAusencia(this)">Ausente</span>
-            <span class="presenca presente" onclick="registrarPresenca(this)">Presente</span>
-            <span class="contador">Presenças: 0 | Ausências: 0</span>
+            <span class="presenca ausente" data-status="ausente">Ausente</span>
+            <span class="presenca presente" data-status="presente">Presente</span>
         </div>
         <div class="aluno">
             <span class="aluno-nome">Gustavo</span>
-            <span class="presenca ausente" onclick="registrarAusencia(this)">Ausente</span>
-            <span class="presenca presente" onclick="registrarPresenca(this)">Presente</span>
-            <span class="contador">Presenças: 0 | Ausências: 0</span>
+            <span class="presenca ausente" data-status="ausente">Ausente</span>
+            <span class="presenca presente" data-status="presente">Presente</span>
         </div>
         <div class="aluno">
             <span class="aluno-nome">Bruno</span>
-            <span class="presenca ausente" onclick="registrarAusencia(this)">Ausente</span>
-            <span class="presenca presente" onclick="registrarPresenca(this)">Presente</span>
-            <span class="contador">Presenças: 0 | Ausências: 0</span>
+            <span class="presenca ausente" data-status="ausente">Ausente</span>
+            <span class="presenca presente" data-status="presente">Presente</span>
         </div>
-        <!-- Adicione os outros alunos aqui da mesma forma -->
     </div>
 
     <script src="alunos.js"></script>
