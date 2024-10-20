@@ -4,17 +4,18 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #121212; /* Tom escuro que ajuda a destacar o conteúdo */
+    background-color: #121212;
     color: #ffffff;
 }
 
 /* Container Principal */
 .container {
+  
     width: 95%;
     margin: auto;
     padding: 20px 0;
     max-width: 1200px;
-    overflow-y:auto ; /* Impede o estouro do conteúdo */
+    gap: 50px;
 }
 
 /* Cabeçalho */
@@ -25,54 +26,52 @@ header {
     text-align: center;
     font-size: 48px;
     border-bottom: 2px solid #e7dcdc;
-    overflow-y: auto;
-    letter-spacing: 1px; /* Melhora o espaçamento das letras no título */
+    letter-spacing: 1px;
 }
 
+/* Títulos */
 h1, h2, h3 {
     color: #ffffff;
     font-weight: 300;
     margin-bottom: 10px;
+    text-align: center;
 }
 
-h2, h3 {
-    font-size: 28px;
+h2 {
+    font-size: 32px;
+    margin-top: 40px;
 }
 
-/* Seção de Títulos */
-.section-title {
-    border-bottom: 2px solid #ffffff;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
+h3 {
     font-size: 24px;
-    text-transform: uppercase; /* Deixa o título mais destacado */
-    
+    margin-top: 20px;
 }
 
-/* Estilização da Equipe */
+/* Seção da Equipe */
 .team-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-margin-top: 10px;   
- margin-bottom: 40px;
+    margin-top: 20px;
 }
 
 .team-grid {
-  overflow-x: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 70px;
 }
+
 .team-member {
     text-align: center;
     background-color: #1f1f1f;
     padding: 20px;
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+
 
 .team-member:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Realça o efeito de hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .team-member strong {
@@ -80,60 +79,32 @@ margin-top: 10px;
     margin-bottom: 8px;
     font-size: 24px;
     color: #fff;
-    font-weight: bold;
 }
 
-.team-member span {
+.team-member p {
     font-size: 18px;
     color: #ffffff;
 }
 
-/* Seção Sobre Nós - Centralizada */
+/* Seção Sobre Nós */
 .section-content {
-    text-align: center;
+    display: flex;
     margin: 40px 0;
     font-size: 18px;
     line-height: 1.8;
-    overflow-y: auto;
-    width: 100%;
 }
 
-/* Seções Alternadas Esquerda-Direita */
-.left-align, .right-align {
-    margin: 20px 0;
-    font-size: 18px;
-    padding: 10px;
-    background-color: #1a1a1a;
-    border-radius: 8px;
+.section-content p {
+    margin-bottom: 20px;
+    text-align: justify;
 }
 
-.left-align {
-    text-align: left;
-}
-
-.right-align {
-    text-align: right;
-}
-
-/* Ajustes para diferentes tamanhos de tela */
-@media (max-width: 768px) {
-    .left-align, .right-align {
-        text-align: center;
-        margin: 20px auto;
-        padding: 15px;
-    }
-    .team-section {
-        flex-direction: column;
-    }
-}
-
-/* Listas de Valores */
-ul {
+.section-content ul {
     list-style: none;
     padding-left: 0;
 }
 
-ul li {
+.section-content ul li {
     margin-bottom: 15px;
     font-size: 18px;
     padding-left: 25px;
@@ -141,7 +112,7 @@ ul li {
     line-height: 1.5;
 }
 
-ul li::before {
+.section-content ul li::before {
     content: "✔";
     color: #b8b8b8;
     position: absolute;
@@ -150,26 +121,57 @@ ul li::before {
     line-height: 1.5;
 }
 
-/* Ajuste do Texto */
-p {
-    font-size: 18px;
-    margin-bottom: 20px;
-    line-height: 1.8;
-    text-align: justify; /* Melhora a leitura de blocos de texto */
-}
-
 /* Seções com borda e espaçamento */
 section {
     padding: 20px;
     margin-bottom: 40px;
     background-color: #1a1a1a;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sutil sombra para dar profundidade */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Melhorando o alinhamento da aba de valores */
-div.tab {
-    margin-left: auto;
-    padding-left: 20px;
-    text-align: center; /* Centraliza o conteúdo */
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .section-content, p {
+        font-size: 16px;
+    }
+}
+/* Imagens Responsivas da Equipe */
+.team-photo {
+    width: 100%;
+    height: auto;
+    max-width: 150px; /* Limita o tamanho máximo da imagem */
+    border-radius: 10%; /* Faz com que a imagem fique redonda */
+    margin: 10px 0; /* Espaçamento entre a imagem e o texto */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .team-photo {
+        max-width: 120px; /* Ajusta o tamanho máximo para telas menores */
+    }
+
+    .team-member strong {
+        font-size: 20px;
+    }
+
+    .team-member span {
+        font-size: 16px;
+    }
 }

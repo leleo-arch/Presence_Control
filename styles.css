@@ -24,8 +24,9 @@ body {
     color: var(--text-color);
     padding: var(--padding-default);
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     letter-spacing: 1px;
+    margin-bottom: -40px;
 }
 
 .img {
@@ -45,6 +46,7 @@ nav {
     color: var(--text-color);
     padding: 10px;
     font-size: 18px;
+
     display: flex;
     justify-content: center;
     gap: 20px;
