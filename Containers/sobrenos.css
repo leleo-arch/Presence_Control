@@ -32,7 +32,7 @@ header {
 h1, h2, h3 {
     color: #ffffff;
     font-weight: 200;
-    margin-bottom: 10px;
+    margin-bottom: 26px;
     text-align: center;
 }
 
@@ -137,7 +137,7 @@ section {
     height: auto;
     max-width: 150px; /* Limita o tamanho máximo da imagem */
     border-radius: 10%; /* Faz com que a imagem fique arredondada */
-    margin: 10px 0; /* Espaçamento entre a imagem e o texto */
+    margin: 10px 0px; /* Espaçamento entre a imagem e o texto */
 }
 
 /* Responsividade */
@@ -164,6 +164,7 @@ section {
 
     .team-photo {
         max-width: 120px; /* Ajusta o tamanho máximo para telas menores */
+        margin: 10px 80px;
     }
 
     .team-member strong {
