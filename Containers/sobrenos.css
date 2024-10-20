@@ -6,11 +6,11 @@ body {
     padding: 0;
     background-color: #121212;
     color: #ffffff;
+    text-align: center; /* Centraliza todo o conteúdo por padrão */
 }
 
 /* Container Principal */
 .container {
-  
     width: 95%;
     margin: auto;
     padding: 20px 0;
@@ -66,7 +66,6 @@ h3 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
 .team-member:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
@@ -87,19 +86,23 @@ h3 {
 /* Seção Sobre Nós */
 .section-content {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 40px 0;
     font-size: 18px;
     line-height: 1.8;
+    text-align: center; /* Centraliza os textos nesta seção */
 }
 
 .section-content p {
     margin-bottom: 20px;
-    text-align: justify;
+    text-align: center; /* Alinhamento centralizado */
 }
 
 .section-content ul {
     list-style: none;
     padding-left: 0;
+    text-align: center; /* Centraliza a lista */
 }
 
 .section-content ul li {
@@ -128,6 +131,15 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Imagens Responsivas da Equipe */
+.team-photo {
+    width: 100%;
+    height: auto;
+    max-width: 150px; /* Limita o tamanho máximo da imagem */
+    border-radius: 10%; /* Faz com que a imagem fique arredondada */
+    margin: 10px 0; /* Espaçamento entre a imagem e o texto */
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
     h1 {
@@ -149,18 +161,7 @@ section {
     .section-content, p {
         font-size: 16px;
     }
-}
-/* Imagens Responsivas da Equipe */
-.team-photo {
-    width: 100%;
-    height: auto;
-    max-width: 150px; /* Limita o tamanho máximo da imagem */
-    border-radius: 10%; /* Faz com que a imagem fique redonda */
-    margin: 10px 0; /* Espaçamento entre a imagem e o texto */
-}
 
-/* Responsividade */
-@media (max-width: 768px) {
     .team-photo {
         max-width: 120px; /* Ajusta o tamanho máximo para telas menores */
     }

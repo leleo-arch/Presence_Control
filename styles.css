@@ -63,7 +63,8 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #e2e2e2; /* cor levemente diferente para hover */
+    transform: scale(1.05);
+    background-color: #1f1f1f;
 }
 
 /* Seção principal */
@@ -75,6 +76,12 @@ section {
 h2 {
     font-size: 38px;
     margin-bottom: 15px;
+
+    
+}
+
+.mensagem {
+    font-size: 20px;
 
     
 }
