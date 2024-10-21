@@ -47,7 +47,7 @@ label {
 input {
     width: 100%;
     padding: 10px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-top: 8px;
     border: 1px solid #cccccc;
     border-radius: 4px;
@@ -79,7 +79,7 @@ input:focus {
 .forgot-password {
     display: block;
     margin-top: 15px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #1a73e8;
     text-decoration: none;
 }
@@ -112,16 +112,41 @@ input:focus {
     text-align: center;
 }
 
-.Logo{
+/* Responsividade para dispositivos móveis */
+@media (max-width: 600px) {
+    .login-container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .login-btn, .back-btn {
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+
+    .input-group input {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    .forgot-password {
+        font-size: 0.9rem;
+    }
+}
+
+.Logo {
     width: 100%;
     height: auto;
-    max-width: 500px; /* Limita o tamanho máximo da imagem */
-    border-radius: 10%; 
+    max-width: 300px; /* Limita o tamanho máximo da imagem */
+    border-radius: 10%;
     margin: -20px 0px; /* Espaçamento entre a imagem e o texto */
 }
 
-.back-btn{
-
+.back-btn {
     width: 100%;
     padding: 12px;
     background-color: #252525;
