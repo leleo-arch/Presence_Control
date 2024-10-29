@@ -9,88 +9,15 @@
 </head>
 <body>
     <h1>Lista de Alunos</h1>
+<!-- Formulário para cadastrar novos alunos -->
+<form id="cadastroAlunoForm" onsubmit="adicionarAluno(event)">
+    <input type="text" id="nomeAluno" placeholder="Nome do Aluno" required>
+    <button type="submit">Cadastrar Aluno</button>
+</form>
 
-    <div class="alunos-lista">
-        <div class="aluno">
-            <span class="aluno-nome">MIGUEL</span>
-            <div class="presenca-container">
-                <span class="presenca ausente" data-status="ausente" onclick="registrarAusencia(this)">Ausente</span>
-                <span class="presenca presente" data-status="presente" onclick="registrarPresenca(this)">Presente</span>
-            </div>
-            <div class="contador">Presenças: 0 | Ausências: 0</div>
-        </div>
-
-        <div class="aluno">
-            <span class="aluno-nome">DAVI</span>
-            <div class="presenca-container">
-                <span class="presenca ausente" data-status="ausente" onclick="registrarAusencia(this)">Ausente</span>
-                <span class="presenca presente" data-status="presente" onclick="registrarPresenca(this)">Presente</span>
-            </div>
-            <div class="contador">Presenças: 0 | Ausências: 0</div>
-        </div>
-
-        <div class="aluno">
-            <span class="aluno-nome">ERIC</span>
-            <div class="presenca-container">
-                <span class="presenca ausente" data-status="ausente" onclick="registrarAusencia(this)">Ausente</span>
-                <span class="presenca presente" data-status="presente" onclick="registrarPresenca(this)">Presente</span>
-            </div>
-            <div class="contador">Presenças: 0 | Ausências: 0</div>
-        </div>
-
-        <div class="aluno">
-            <span class="aluno-nome">AYRES</span>
-            <div class="presenca-container">
-                <span class="presenca ausente" data-status="ausente" onclick="registrarAusencia(this)">Ausente</span>
-                <span class="presenca presente" data-status="presente" onclick="registrarPresenca(this)">Presente</span>
-            </div>
-            <div class="contador">Presenças: 0 | Ausências: 0</div>
-        </div>
-
-        <div class="aluno">
-            <span class="aluno-nome">ENRICO</span>
-            <div class="presenca-container">
-                <span class="presenca ausente" data-status="ausente" onclick="registrarAusencia(this)">Ausente</span>
-                <span class="presenca presente" data-status="presente" onclick="registrarPresenca(this)">Presente</span>
-            </div>
-            <div class="contador">Presenças: 0 | Ausências: 0</div>
-        </div>
-
-        <div class="aluno">
-            <span class="aluno-nome">VITOR</span>
-            <div class="presenca-container">
-                <span class="presenca ausente" data-status="ausente" onclick="registrarAusencia(this)">Ausente</span>
-                <span class="presenca presente" data-status="presente" onclick="registrarPresenca(this)">Presente</span>
-            </div>
-            <div class="contador">Presenças: 0 | Ausências: 0</div>
-        </div>
-
-        <div class="aluno">
-            <span class="aluno-nome">ERIC</span>
-            <div class="presenca-container">
-                <span class="presenca ausente" data-status="ausente" onclick="registrarAusencia(this)">Ausente</span>
-                <span class="presenca presente" data-status="presente" onclick="registrarPresenca(this)">Presente</span>
-            </div>
-            <div class="contador">Presenças: 0 | Ausências: 0</div>
-        </div>
-
-        <div class="aluno">
-            <span class="aluno-nome">HEITOR</span>
-            <div class="presenca-container">
-                <span class="presenca ausente" data-status="ausente" onclick="registrarAusencia(this)">Ausente</span>
-                <span class="presenca presente" data-status="presente" onclick="registrarPresenca(this)">Presente</span>
-            </div>
-            <div class="contador">Presenças: 0 | Ausências: 0</div>
-        </div>
-
-        <div class="aluno">
-            <span class="aluno-nome">SAMUEL</span>
-            <div class="presenca-container">
-                <span class="presenca ausente" data-status="ausente" onclick="registrarAusencia(this)">Ausente</span>
-                <span class="presenca presente" data-status="presente" onclick="registrarPresenca(this)">Presente</span>
-            </div>
-            <div class="contador">Presenças: 0 | Ausências: 0</div>
-        </div>
+<div class="alunos-lista" id="alunosLista">
+    <!-- Alunos serão adicionados dinamicamente aqui -->
+</div>
 
         <!-- Repetir para os outros alunos -->
     </div>

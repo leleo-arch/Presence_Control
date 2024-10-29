@@ -1,8 +1,10 @@
+
 /* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
@@ -11,8 +13,13 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    margin-right: 600px;
     background-color: #000000;
-    padding: 20px;
+    padding: 10px;
+    background-image: url('./assets/Logobg.jfif'); 
+    background-position: right;
+  background-repeat: no-repeat;
+
 }
 
 .login-container {

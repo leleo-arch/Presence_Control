@@ -25,13 +25,10 @@ body {
 header {
     background: #1f1f1f;
     color: #fff;
-    height: 100vh; /* Para ocupar a altura total da viewport */
     padding: 10px;
     text-align: center;
     border-bottom: 2px solid #e7dcdc;
     letter-spacing: 1px;
-    margin-top: -30px;
-    background-image: url('../assets/turminha.jfif'); 
     background-repeat: no-repeat;
     background-size: cover; /* Faz a imagem cobrir todo o elemento */
 }
