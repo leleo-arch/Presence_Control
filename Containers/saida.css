@@ -34,7 +34,8 @@ h1 {
 
 #nomeAluno {
     padding: 10px;
-    border: 2px solid var(--highlight-color);
+    border: 2px solid var(--text-color);
+    ;
     border-radius: var(--border-radius);
     margin-right: 10px;
     font-size: 16px;
@@ -87,21 +88,30 @@ button:hover {
     font-size: 18px;
 }
 
-.saida {
+.contador {
     font-size: 14px;
-    color: var(--highlight-color);
+    color: var(--text-color);
 }
 
-#cronometro-container {
+.cronometro-container {
     display: flex;
-    flex-direction: column;
+    gap: 10px;
     align-items: center;
 }
 
-.cronometro {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 15px;
+input[type="text"] {
+    background-color: #333;
+    color: var(--text-color);
+    border: 1px solid white;
+    padding: 8px;
+    border-radius: var(--border-radius);
+    font-size: 14px;
+    max-width: 80px;
+    text-align: center;
+}
+
+input[type="text"]::placeholder {
+    color: #888;
 }
 
 @media (max-width: 768px) {
@@ -132,11 +142,12 @@ button:hover {
         font-size: 16px;
     }
 
-    .cronometro {
-        font-size: 22px;
+    .contador {
+        font-size: 12px;
     }
 
-    .saida {
-        font-size: 12px;
+    .cronometro-container {
+        flex-direction: column;
+        gap: 5px;
     }
 }
